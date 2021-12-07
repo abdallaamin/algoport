@@ -1,9 +1,15 @@
+import Baseground from "./components/sketch";
+import Ui98 from "./components/ui98";
+import styles from "./App.css";
 
 function App() {
+
   return (
-    <div className="App">
-    <div>
-      <h1>hello cocoon</h1>
+    <div className="App"
+    style={styles}>
+    <div >   
+      <Ui98/>
+      <Baseground/>
     </div>
     </div>
   );

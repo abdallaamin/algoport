@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 160px;
+  cursor: url(http://www.rw-designer.com/cursor-download.php?id=90885), auto;
+  font-family: 'MS Sans Serif';
+  letter-spacing: 0.001em;
+  font-size: 14px;
+  font-smooth: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
