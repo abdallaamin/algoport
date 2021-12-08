@@ -1,9 +1,11 @@
 import React from "react";
+import "98.css";
 import Sketch from "react-p5";
 
-let x = 50;
-let xy = 0;
-let direction = '^';
+
+// let x = 50;
+// let xy = 0;
+// let direction = '^';
 console.log("width",window.innerWidth);
 console.log("height",window.innerHeight);
 let img1,img2,img3;
@@ -15,8 +17,8 @@ let img1,img2,img3;
 		
 		const all_bustton=()=>{
 		var drawButton = p5.createButton("my info");
-		drawButton.mousePressed("pressed");
 		drawButton.position(20,73);
+		drawButton.mousePressed();
 		var drawButton1 = p5.createButton("cocoon.exe");
 		drawButton1.mousePressed("pressed");
 		drawButton1.position(20,166);
@@ -41,20 +43,19 @@ let img1,img2,img3;
 		p5.image(img2,29,105,50,50);
 		p5.image(img3,28,200,50,50);
 
-		p5.fill(144, 255, 59);
-		p5.ellipse(x, xy, 70, 70);
+		// p5.fill(144, 255, 59);
+		// p5.ellipse(x, xy, 70, 70);
 		// p5.rect(rand, xy, 150, 90);
-		x++;
+		// x++;
 		//y++;
-		p5.fill(255, xy * 1.3, 0);
-		p5.ellipse(p5.width / 2, xy, 50);
-		
-		if (xy > p5.height) direction = '';
-		if (xy < 0) {
-			direction = '^';
-		}
-		if (direction === '^') xy += 8;
-		else xy -= 4;
+		// p5.fill(255, xy * 1.3, 0);
+		// p5.ellipse(p5.width / 2, xy, 50);
+		// if (xy > p5.height) direction = '';
+		// if (xy < 0) {
+		// 	direction = '^';
+		// }
+		// if (direction === '^') xy += 8;
+		// else xy -= 4;
 	};
 
 	return <Sketch setup={setup} draw={draw} />;
