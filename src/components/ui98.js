@@ -31,7 +31,7 @@ const handleonClick=()=>{
     <div className="toolbar-start-menu">
     <button 
     value="0"
-    onClick={()=>handleonClick(setShowmenu(!showmenu))}
+    onClick={()=>handleonClick()}
     className="start-button">
         Yalla
     </button>
