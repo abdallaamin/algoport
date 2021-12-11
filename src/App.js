@@ -1,5 +1,5 @@
 import Baseground from "./components/sketch";
-import Ui98 from "./components/ui98";
+// import Ui98 from "./components/ui98";
 import styles from "./App.css";
 
 function App() {
@@ -8,7 +8,6 @@ function App() {
     <div className="App"
     style={styles}>
     <div >   
-      <Ui98/>
       <Baseground/>
     </div>
     </div>

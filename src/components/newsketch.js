@@ -1,23 +1,19 @@
 import React from "react";
 import "98.css";
-import { render } from "react-dom";
+import Sketch from "react-p5";
 
 
-const NewSkt = ()=>{
 
+const NewWin =(props)=>{
+    const setup = (p5, canvasParentRef) => {
+		p5.createCanvas(250,250).parent(canvasParentRef);
+		p5.frameRate(100);
+    }
+    const draw = (p5) => {
+		p5.background(0);
+		
+    }
 
-    render (
-    <div>
-    <div class="title-bar">
-    <div class="title-bar-text">A Title Bar</div>
-    <div class="title-bar-controls">
-        <button aria-label="Minimize"></button>
-        <button aria-label="Maximize"></button>
-        <button aria-label="Close"></button>
-    </div>
-    </div>
-    </div>
-    )
-
-}
-export default NewSkt ;
+return <Sketch setup={setup} draw={draw} />;
+};
+export default NewWin ;

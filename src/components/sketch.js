@@ -1,6 +1,13 @@
-import React from "react";
+import React , {useState} from "react";
 import "98.css";
 import Sketch from "react-p5";
+import Ui from "./ui98";
+import PopUp from "./popup";
+import Gallary from "./Gallary";
+import Bin from "./Bin";
+// import { render } from "react-dom";
+
+
 
 
 // let x = 50;
@@ -10,20 +17,62 @@ console.log("width",window.innerWidth);
 console.log("height",window.innerHeight);
 let img1,img2,img3;
 
- const Baseground=(props) => {
+const Baseground=(props) => {
+	const [popb, setpopb] = useState({
+        show: false
+    });
+
+	const toggleP = () => {
+        setpopb({
+		show: !popb.show
+        });
+    };
+	const [gallary, setgallary] = useState({
+        show: false
+    });
+
+	const toggleGallary = () => {
+        setgallary({
+		show: !gallary.show
+        });
+    };
+	const [bin, setbin] = useState({
+        show: false
+    });
+
+	const toggleBin = () => {
+        setbin({
+		show: !bin.show
+        });
+    };
+	// let state = {
+	// 	seen: false
+	// };
+	
+	// let togglePop = () => {
+	// 	this.setState({
+	// 	seen: !this.state.seen
+	// 	});
+	// };
 	const setup = (p5, canvasParentRef) => {
 		p5.createCanvas(window.innerWidth,window.innerHeight).parent(canvasParentRef);
+		// mainwin.style('display', 'block');
 		p5.frameRate(100);
-		
+		// let newtab=()=>{
+		// 	console.log("mn gowa");
+		// 	render(
+		// 		<Ui />
+		// 	);
+		// }
 		const all_bustton=()=>{
 		var drawButton = p5.createButton("my info");
 		drawButton.position(20,73);
-		drawButton.mousePressed();
+		drawButton.mousePressed(()=>toggleP());
 		var drawButton1 = p5.createButton("cocoon.exe");
-		drawButton1.mousePressed("pressed");
+		drawButton1.mousePressed(()=>toggleGallary());
 		drawButton1.position(20,166);
 		var drawButton2 = p5.createButton("recycle bin");
-		drawButton2.mousePressed("pressed");
+		drawButton2.mousePressed(()=>toggleBin());
 		drawButton2.position(20,260);
 		};
 		const all_images=()=>{
@@ -33,12 +82,12 @@ let img1,img2,img3;
 		};
 		all_bustton();
 		all_images();
-
+		
     // use parent to render canvas in this ref (without that p5 render this canvas outside your component)
 	};
 	// let rand =Math.random();
 	const draw = (p5) => {
-		p5.background(208, 237, 135);
+		p5.background(227, 219, 152);
 		p5.image(img1,28,15,50,50);
 		p5.image(img2,29,105,50,50);
 		p5.image(img3,28,200,50,50);
@@ -58,6 +107,15 @@ let img1,img2,img3;
 		// else xy -= 4;
 	};
 
-	return <Sketch setup={setup} draw={draw} />;
+	return (
+		<div>
+		<Sketch setup={setup} draw={draw} />
+		{popb.show ? <PopUp/> : null}
+		{gallary.show ? <Gallary/> : null}
+		{bin.show ? <Bin/> : null}
+		<Ui/>
+		</div>
+		
+		);
 	};
 export default Baseground ;

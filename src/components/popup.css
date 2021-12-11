@@ -1,0 +1,38 @@
+.modal_content{
+    /* width: 300px; 
+    height:300px;
+    position:center;
+    
+    top: 30%; 
+    left:40%; 
+    margin-top: -150px; 
+    margin-left: -200px; 
+    max-height: calc(100vh - 120px);
+    overflow: auto; */
+    position: fixed;
+    left: 10%;
+    z-index:999;
+    top: 13%;
+    width: 80%;
+    height:50%;
+    border: 1px solid #011627;
+    box-shadow: -2px 5px 5px #6e6d6d;
+    background-color: #ffffff;
+}
+.title-bar{
+    /* width: 300px; 
+    height:20px;
+    position:absolute;
+    top: 30%; 
+    left:50%; 
+    margin-top: -150px; 
+    margin-left: -200px; 
+    overflow: auto; */
+    position: fixed;
+    left: 10%;
+    z-index:999;
+    top: 11%;
+    width: 79.8%;
+    height:10px;
+
+}
