@@ -1,41 +1,30 @@
 import "98.css";
 import {useState} from "react";
-import { render } from "@testing-library/react";
 import styles from "./ui98.css";
+import StartMenue from "./Startmenu";
 
 const Ui=()=> {
-    
-const [showmenu, setShowmenu] = useState(true);
-const renderMenue= ()=>{
-    render(
-        <div className="start-menu-wrapper">
-            <div className="start-menu-title">
-            <span><strong>Cocoon</strong>98</span>
-            </div>
-            <div className="start-menu">
-            </div>
-        </div>
-    ) 
-
-}
-const hopab2a = ()=>{
-    setShowmenu(!showmenu);
-}
-
-const handleonClick=()=>{
-    showmenu  && setShowmenu ? renderMenue() : hopab2a() ;
-};
+    const [state, setState] = useState({
+        seen: false
+    });
+    const toggleMenu = () => {
+        setState({
+        seen: !state.seen
+        });
+    };
+// const [showmenu, setShowmenu] = useState(true);
     return (
     
     <div id="toolbar" style={styles}>
     <div className="toolbar-start-menu">
     <button 
     value="0"
-    onClick={()=>handleonClick()}
+    onClick={()=>toggleMenu()}
     className="start-button">
         Yalla
     </button>
     </div>
+    {state.seen ? <StartMenue /> : null}
     </div>
     );
 };

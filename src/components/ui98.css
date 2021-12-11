@@ -6,6 +6,7 @@
     bottom: 0;
     left: 0;
     border-top: 1px solid #fff;
+    box-shadow: -2px 5px 5px #6e6d6d;
 }
     .toolbar-start-menu{
     float: left;
