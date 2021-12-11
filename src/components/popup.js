@@ -22,9 +22,9 @@ const  PopUp=()=> {
         <p>
         in Dec 2021  cocoon culture center located @cairo, egypt , hosted an algorthmic/generative art  
         </p>
-        <p>
+        {/*<p>
         Read more at <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Tab_Role" target="_blank">MDN Web docs - ARIA: tab role</a>
-        </p>
+        </p>*/}
     </article>
     </div>
     </div>
