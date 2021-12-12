@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App"
     style={styles}>
-    <div >   
-      <Baseground/>
+    <div >
+    <Baseground/>
     </div>
     </div>
   );
