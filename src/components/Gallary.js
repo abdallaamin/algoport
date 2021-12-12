@@ -35,7 +35,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        <a href="https://google.com" target="_blank">Habiba Afifi</a>
+        <a href="https://google.com" target="_blank" rel="noreferrer">Habiba Afifi</a>
         </Typography>
         </CardContent>
         </Card>
