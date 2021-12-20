@@ -10,7 +10,7 @@ function App() {
     setloading(true)
    setTimeout(()=>{
     setloading(false)
-   },500)
+   },300)
   }, [])
   return (
     <div className="App"
