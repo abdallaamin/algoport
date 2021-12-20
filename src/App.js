@@ -10,13 +10,13 @@ function App() {
     setloading(true)
    setTimeout(()=>{
     setloading(false)
-   },300)
+   },1000)
   }, [])
   return (
     <div className="App"
     style={styles}>
     { loading ?
-      <Loading /> : null}
+      <Loading /> :null }
     <Baseground/>
     </div>
   );
