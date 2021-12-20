@@ -5,6 +5,7 @@ import Ui from "./ui98";
 import PopUp from "./popup";
 import Gallary from "./Gallary";
 import Bin from "./Bin";
+import Playwme from "./newsketch";
 
 // import { render } from "react-dom";
 
@@ -47,6 +48,20 @@ const Baseground=(props) => {
 		show: false
         });
     };
+	const [play, setplay] = useState({
+        show: false
+    });
+
+	const onopenPlay = () => {
+        setplay({
+		show: true
+        });
+    };
+	const onclosePlay = () => {
+        setplay({
+		show: false
+        });
+    };
 	const [bin, setbin] = useState({
         show: false
     });
@@ -71,6 +86,8 @@ const Baseground=(props) => {
 	// 	});
 	// };
 	const setup = (p5, canvasParentRef) => {
+		let Screenwidth =window.innerWidth;
+		let Screenheight =window.innerHeight;
 		p5.createCanvas(window.innerWidth,window.innerHeight).parent(canvasParentRef);
 		// mainwin.style('display', 'block');
 		p5.frameRate(100);
@@ -90,6 +107,9 @@ const Baseground=(props) => {
 		var drawButton2 = p5.createButton("recycle bin");
 		drawButton2.mousePressed(()=>onopenBin());
 		drawButton2.position(20,260);
+		var drawButton3 = p5.createButton("play with me");
+		drawButton3.position((Screenwidth/2)-37,Screenheight/2);
+		drawButton3.mousePressed(()=>onopenPlay());
 		};
 		const all_images=()=>{
 		img1 = p5.loadImage("https://i.ibb.co/Fg9yvFg/pngwing-com-1.png");
@@ -128,6 +148,7 @@ const Baseground=(props) => {
 		<Sketch setup={setup} draw={draw} />
 		{popb.show ? <PopUp onclickx={oncloseingP}/> : null}
 		{gallary.show ? <Gallary onclickgallary={oncloseGallary}/> : null}
+		{play.show ? <Playwme closeplay={onclosePlay}/> : null}
 		{bin.show ? <Bin onbin={oncloseBin}/> : null}
 		<Ui/>
 		</div>
