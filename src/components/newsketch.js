@@ -11,7 +11,7 @@ const Playwme =({closeplay})=>{
   const setup = (p5, canvasParentRef) => {
 		let cnv= p5.createCanvas(window.innerWidth,window.innerHeight).parent(canvasParentRef);
     cnv.position(0,0);
-    p5.noStroke();
+    // p5.noStroke();
     // p5.fill(0,15,30);
     // p5.noStroke();
   
@@ -27,11 +27,12 @@ const Playwme =({closeplay})=>{
     var closebutton = p5.createButton("x");
 		closebutton.mousePressed(()=>closeplay());
 		closebutton.position((width-85),9);
+    p5.text("touch yourscreen")
     // p5.fill(255, 150);
     // p5.ellipse(x, height/2, y, y);
     // p5.fill(0, 159);
     // p5.ellipse(ix, height/2, iy, iy);
-    let x = width;
+    // let x = width;
     let d = 150;
     let num = 120 ;
     p5.translate(width/2, height/2);
@@ -39,7 +40,8 @@ const Playwme =({closeplay})=>{
     p5.rotate(p5.radians(p5.mouseX));
     p5.push();
   for(let i =0 ; i<num ;i++){
-    p5.fill(p5.mouseX+i*8,1.5*i+a,p5.mouseX+a*i);
+    p5.fill(p5.mouseX+i,1.5*i+a,p5.mouseX*a*i);
+    // p5.fill(127, 240, 208);
     p5.scale(0.95);
     p5.rotate(p5.radians(angle)*5);
     p5.ellipse(p5.mouseX, p5.mouseX, d, d);

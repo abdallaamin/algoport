@@ -2,7 +2,7 @@
     /* background-image:url("./loadingpg.jpg")  center center / cover fixed;
     background-repeat: repeat-y;
     background-size: 100%; */
-    background: url('./loadingpg.jpg') no-repeat; 
+    background: url("./loadingpg.jpg") no-repeat; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
