@@ -1,14 +1,14 @@
 import "98.css";
 import style from "./popup.css";
 
-const  PopUp=()=> {
+const  PopUp=({onclickx})=> {
 
     return (
         <div className="modal" style={style}>
         <div className="title-bar">
         <div className="title-bar-text">my info</div>
         <div className="title-bar-controls">
-        <button aria-label="Close" ></button>
+        <button aria-label="Close" onClick={onclickx}>&times;</button>
         </div>
     </div>
         <div className="modal_content" style={style}>

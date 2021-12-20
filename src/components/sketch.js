@@ -5,6 +5,7 @@ import Ui from "./ui98";
 import PopUp from "./popup";
 import Gallary from "./Gallary";
 import Bin from "./Bin";
+
 // import { render } from "react-dom";
 
 
@@ -22,27 +23,42 @@ const Baseground=(props) => {
         show: false
     });
 
-	const toggleP = () => {
+	const onclickingP = () => {
         setpopb({
-		show: !popb.show
+		show: true
+        });
+    };
+	const oncloseingP = () => {
+        setpopb({
+		show: false
         });
     };
 	const [gallary, setgallary] = useState({
         show: false
     });
 
-	const toggleGallary = () => {
+	const onopenGallary = () => {
         setgallary({
-		show: !gallary.show
+		show: true
+        });
+    };
+	const oncloseGallary = () => {
+        setgallary({
+		show: false
         });
     };
 	const [bin, setbin] = useState({
         show: false
     });
 
-	const toggleBin = () => {
+	const onopenBin = () => {
         setbin({
-		show: !bin.show
+		show: true
+        });
+    };
+	const oncloseBin = () => {
+        setbin({
+		show: false
         });
     };
 	// let state = {
@@ -67,12 +83,12 @@ const Baseground=(props) => {
 		const all_bustton=()=>{
 		var drawButton = p5.createButton("my info");
 		drawButton.position(20,73);
-		drawButton.mousePressed(()=>toggleP());
+		drawButton.mousePressed(()=>onclickingP());
 		var drawButton1 = p5.createButton("cocoon.exe");
-		drawButton1.mousePressed(()=>toggleGallary());
+		drawButton1.mousePressed(()=>onopenGallary());
 		drawButton1.position(20,166);
 		var drawButton2 = p5.createButton("recycle bin");
-		drawButton2.mousePressed(()=>toggleBin());
+		drawButton2.mousePressed(()=>onopenBin());
 		drawButton2.position(20,260);
 		};
 		const all_images=()=>{
@@ -89,7 +105,7 @@ const Baseground=(props) => {
 	const draw = (p5) => {
 		p5.background(227, 219, 152);
 		p5.image(img1,28,15,50,50);
-		p5.image(img2,29,105,50,50);
+		p5.image(img2,29,105,48,50);
 		p5.image(img3,28,200,50,50);
 
 		// p5.fill(144, 255, 59);
@@ -110,9 +126,9 @@ const Baseground=(props) => {
 	return (
 		<div>
 		<Sketch setup={setup} draw={draw} />
-		{popb.show ? <PopUp/> : null}
-		{gallary.show ? <Gallary/> : null}
-		{bin.show ? <Bin/> : null}
+		{popb.show ? <PopUp onclickx={oncloseingP}/> : null}
+		{gallary.show ? <Gallary onclickgallary={oncloseGallary}/> : null}
+		{bin.show ? <Bin onbin={oncloseBin}/> : null}
 		<Ui/>
 		</div>
 		

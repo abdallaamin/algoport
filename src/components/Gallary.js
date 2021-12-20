@@ -6,14 +6,19 @@ import style from "./Gallary.css";
 import Typography from '@mui/material/Typography';
 
 
-const  Gallary=()=> {
-
+const  Gallary=({onclickgallary})=> {
+//    let winsize =[
+//        window.innerWidth,
+//        Window.innerHeight,
+//    ];
+//  {winsize[0] && winsize[1]=== ["",""] ?<div className="gallaryWindow" style={{display:"flex"}}/>:null }
+    let instaurl = ["https://instagram.com/andreeambessinha?utm_medium=copy_link","https://instagram.com/ha6iba?utm_medium=copy_link","https://instagram.com/hazemshaltoot.art?utm_medium=copy_link","https://instagram.com/ziad.hossamaly?utm_medium=copy_link","https://www.instagram.com/theaminoz/"]
     return (
-
+    
         <div className="title-bar">
         <div className="title-bar-text">cocoon.exe</div>
         <div className="title-bar-controls">
-        <button aria-label="Close" ></button>
+        <button aria-label="Close" onClick={onclickgallary}></button>
         </div>
         <div className="gallaryWindow" style={style}>
         <h3 style={{font:15}}>Exhibtion</h3>
@@ -22,6 +27,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -35,7 +42,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        <a href="https://google.com" target="_blank" rel="noreferrer">Habiba Afifi</a>
+        <a href={instaurl[1]} target="_blank" rel="noreferrer">Habiba Afifi</a>
         </Typography>
         </CardContent>
         </Card>
@@ -45,6 +52,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -57,7 +66,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Habiba Afifi
+        <a href={instaurl[1]} target="_blank" rel="noreferrer">Habiba Afifi</a>
         </Typography>
         </CardContent>
         </Card>
@@ -67,6 +76,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -80,7 +91,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -90,6 +101,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -103,7 +116,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            Ziad Hossam
+        <a href={instaurl[3]} target="_blank" rel="noreferrer">Ziad Hossam</a>
         </Typography>
         </CardContent>
         </Card>
@@ -113,6 +126,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -126,7 +141,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -136,6 +151,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -149,7 +166,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            Abdalla Amin
+        <a href={instaurl[4]} target="_blank" rel="noreferrer">Abdalla Amin</a>
         </Typography>
         </CardContent>
         </Card>
@@ -159,6 +176,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -172,7 +191,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -182,6 +201,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -195,7 +216,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            andreea
+        <a href={instaurl[0]} target="_blank" rel="noreferrer">Andree Ambessinha </a>
         </Typography>
         </CardContent>
         </Card>
@@ -205,6 +226,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -218,7 +241,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -228,6 +251,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -241,7 +266,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -251,6 +276,33 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/r5zYXGB/12-8-17-48-49.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[4]} target="_blank" rel="noreferrer">Abdalla Amin</a>
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -264,7 +316,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -274,6 +326,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -287,7 +341,7 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
         </Typography>
         </CardContent>
         </Card>
@@ -297,73 +351,8 @@ const  Gallary=()=> {
             p: 2,
             minWidth: 200,
             minHeight: 200,
-            border: 1 ,
-            zIndex: 'tooltip',
-            margin: 2 ,
-            font:15,
-        }}>
-        <CardMedia
-        component="img"
-        alt="green iguana"
-        height="220"
-        image="https://i.ibb.co/g6bdMZd/11-22-21-36-10.png"
-        />
-        <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-        Hazem Shaltoot
-        </Typography>
-        </CardContent>
-        </Card>
-        <br></br>
-        <Card sx={{
-            boxShadow: 1,
-            p: 2,
-            minWidth: 200,
-            minHeight: 200,
-            border: 1 ,
-            zIndex: 'tooltip',
-            margin: 2 ,
-            font:15,
-        }}>
-        <CardMedia
-        component="img"
-        alt="green iguana"
-        height="220"
-        image="https://i.ibb.co/5cgfGVt/Screen-Shot-2021-11-08-at-9-38-42-PM.png"
-        />
-        <CardContent>
-        <Typography gutterBottom variant="h5" component="div">ziad hossam
-        </Typography>
-        </CardContent>
-        </Card>
-        <br></br>
-        <Card sx={{
-            boxShadow: 1,
-            p: 2,
-            minWidth: 200,
-            minHeight: 200,
-            border: 1 ,
-            zIndex: 'tooltip',
-            margin: 2 ,
-            font:15,
-        }}>
-        <CardMedia
-        component="img"
-        alt="green iguana"
-        height="220"
-        image="https://i.ibb.co/r5zYXGB/12-8-17-48-49.png"
-        />
-        <CardContent>
-        <Typography gutterBottom variant="h5" component="div">Abdalla Amin
-        </Typography>
-        </CardContent>
-        </Card>
-        <br></br>
-        <Card sx={{
-            boxShadow: 1,
-            p: 2,
-            minWidth: 200,
-            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
             border: 1 ,
             zIndex: 'tooltip',
             margin: 2 ,
@@ -377,11 +366,137 @@ const  Gallary=()=> {
         />
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-            Abdalla Amin
+        <a href={instaurl[4]} target="_blank" rel="noreferrer">Abdalla Amin</a>
         </Typography>
         </CardContent>
         </Card>
         <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/g6bdMZd/11-22-21-36-10.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/h7NvBwd/Andrea-2.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[0]} target="_blank" rel="noreferrer">Andree Ambessinha </a>
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/MsxRnry/11-10-21-36-9.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[2]} target="_blank" rel="noreferrer">Hazem Shaltoot</a>
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/P6ZnFtY/Andrea-1.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[0]} target="_blank" rel="noreferrer">Andree Ambessinha </a>
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            maxWidth: 400,
+            maxHeight: 550,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/5cgfGVt/Screen-Shot-2021-11-08-at-9-38-42-PM.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        <a href={instaurl[3]} target="_blank" rel="noreferrer">Ziad Hossam</a>
+        </Typography>
+        </CardContent>
+        </Card>
+        
     </div>
     </div>
     );
