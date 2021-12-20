@@ -14,7 +14,7 @@ const  Bin=({onbin})=> {
     </div>
         <div className="bin" style={style}>
         <article role="tabpanel" id="tab-A">
-        <img src={IS} alt="Logo" />;
+        <img src={IS} alt="Logo" style={{width:50, height:50 , marginTop:170 }}/>;
     </article>
     </div>
     </div>

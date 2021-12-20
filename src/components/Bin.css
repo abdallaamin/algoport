@@ -6,7 +6,7 @@
     width: 80%;
     height:60%;
     border: 1px solid #011627;
-    overflow: scroll; 
+    overflow: auto; 
     box-shadow: -2px 5px 5px #6e6d6d;
     background-color: #ffffff;
     justify-content: center;
