@@ -88,7 +88,7 @@ const Baseground=(props) => {
 	const setup = (p5, canvasParentRef) => {
 		let Screenwidth =window.innerWidth;
 		let Screenheight =window.innerHeight;
-		p5.createCanvas(window.innerWidth,window.innerHeight).parent(canvasParentRef);
+		p5.createCanvas(window.innerWidth,(window.innerHeight)-30).parent(canvasParentRef);
 		// mainwin.style('display', 'block');
 		p5.frameRate(100);
 		// let newtab=()=>{

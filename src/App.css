@@ -8,9 +8,11 @@ body {
   letter-spacing: 0.001em;
   font-size: 14px;
   font-smooth: none;
+  overflow:hidden;
 }
 
 .App {
   font-family: sans-serif;
   text-align: center;
+  overflow:hidden;
 }
