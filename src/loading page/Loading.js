@@ -6,7 +6,6 @@ const Loading = () => {
 
     return (
         <div className="loadingPage">
-        <image />
         </div>
     );
 };
