@@ -2,14 +2,14 @@ import "98.css";
 import style from "./Bin.css";
 import IS from './IS.png';
 
-const  Bin=()=> {
+const  Bin=({onbin})=> {
 
     return (
         <div className="modal" style={style}>
         <div className="title-bar">
-        <div className="title-bar-text">my info</div>
+        <div className="title-bar-text">recycle bin</div>
         <div className="title-bar-controls">
-        <button aria-label="Close" ></button>
+        <button aria-label="Close" onClick={onbin} ></button>
         </div>
     </div>
         <div className="bin" style={style}>

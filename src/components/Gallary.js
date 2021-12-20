@@ -6,14 +6,14 @@ import style from "./Gallary.css";
 import Typography from '@mui/material/Typography';
 
 
-const  Gallary=()=> {
+const  Gallary=({onclickgallary})=> {
 
     return (
 
         <div className="title-bar">
         <div className="title-bar-text">cocoon.exe</div>
         <div className="title-bar-controls">
-        <button aria-label="Close" ></button>
+        <button aria-label="Close" onClick={onclickgallary}></button>
         </div>
         <div className="gallaryWindow" style={style}>
         <h3 style={{font:15}}>Exhibtion</h3>
@@ -311,6 +311,76 @@ const  Gallary=()=> {
         <CardContent>
         <Typography gutterBottom variant="h5" component="div">
         Hazem Shaltoot
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/h7NvBwd/Andrea-2.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Andrea
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/MsxRnry/11-10-21-36-9.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Hazem Shaltoot
+        </Typography>
+        </CardContent>
+        </Card>
+        <br></br>
+        <Card sx={{
+            boxShadow: 1,
+            p: 2,
+            minWidth: 200,
+            minHeight: 200,
+            border: 1 ,
+            zIndex: 'tooltip',
+            margin: 2 ,
+            font:15,
+        }}>
+        <CardMedia
+        component="img"
+        alt="green iguana"
+        height="220"
+        image="https://i.ibb.co/P6ZnFtY/Andrea-1.png"
+        />
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        Andrea
         </Typography>
         </CardContent>
         </Card>
