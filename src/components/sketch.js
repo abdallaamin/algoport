@@ -98,7 +98,7 @@ const Baseground=(props) => {
 		// 	);
 		// }
 		const all_bustton=()=>{
-		var drawButton = p5.createButton("my info");
+		var drawButton = p5.createButton("info");
 		drawButton.position(20,73);
 		drawButton.mousePressed(()=>onclickingP());
 		var drawButton1 = p5.createButton("cocoon.exe");

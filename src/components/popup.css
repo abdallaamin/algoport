@@ -14,7 +14,7 @@
     z-index:999;
     top: 13%;
     width: 80%;
-    height:50%;
+    height:60%;
     border: 1px solid #011627;
     box-shadow: -2px 5px 5px #6e6d6d;
     background-color: #ffffff;
@@ -34,5 +34,14 @@
     top: 11%;
     width: 79.8%;
     height:10px;
+
+}
+
+.Me{
+    display: flex;
+    justify-content:space-around;
+}
+.buttonss{
+    left: 30%;
 
 }

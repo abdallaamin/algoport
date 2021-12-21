@@ -21,7 +21,7 @@ const  Gallary=({onclickgallary})=> {
         <button aria-label="Close" onClick={onclickgallary}></button>
         </div>
         <div className="gallaryWindow" style={style}>
-        <h3 style={{font:15}}>Exhibtion</h3>
+        <h3 style={{font:15}}> Online Exhibtion</h3>
         <Card sx={{
             boxShadow: 1,
             p: 2,

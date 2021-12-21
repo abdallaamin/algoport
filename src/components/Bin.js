@@ -1,6 +1,6 @@
 import "98.css";
 import style from "./Bin.css";
-import IS from './IS.png';
+
 
 const  Bin=({onbin})=> {
 
@@ -14,8 +14,9 @@ const  Bin=({onbin})=> {
     </div>
         <div className="bin" style={style}>
         <article role="tabpanel" id="tab-A">
-        <img src={IS} alt="Logo" style={{width:50, height:50 , marginTop:170 }}/>
+        <img src="https://i.ibb.co/D51PfzV/capi.png" alt="Logo" style={{width:300, height:200 , marginTop:100 }}/> 
     </article>
+    :'D
     </div>
     </div>
     );
