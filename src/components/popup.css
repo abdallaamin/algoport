@@ -14,7 +14,8 @@
     z-index:999;
     top: 13%;
     width: 80%;
-    height:60%;
+    height:70%;
+    max-height :800px;
     border: 1px solid #011627;
     box-shadow: -2px 5px 5px #6e6d6d;
     background-color: #ffffff;
@@ -36,12 +37,12 @@
     height:10px;
 
 }
-
 .Me{
     display: flex;
     justify-content:space-around;
+    
 }
+
 .buttonss{
-    left: 30%;
 
 }
