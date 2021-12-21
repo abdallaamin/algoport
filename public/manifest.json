@@ -1,19 +1,19 @@
 {
   "short_name": "Cocoon98",
-  "name": "online exhibtion of algorthmic art ",
+  "name": "online exhibtion and genertaive art playground ",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./cocoon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./cocoon.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./cocoon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
