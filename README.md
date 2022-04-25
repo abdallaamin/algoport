@@ -1,5 +1,9 @@
 # About Algoportoflio
+<img width="960" alt="algo1" src="https://user-images.githubusercontent.com/26660809/165190668-8a4a951c-745d-495d-b387-bcfe7e32741c.png">
 
+  <h2 > you can visit deployed version in
+  <a href="https://algoportoflio.web.app/" target="__blank" > here</a>
+  </h2>
 I recently attended a collection of sessions on creating generative art using processing (open source tool for generative art using java ) at cocoon culture center located @cairo , So I took the chance and delved into P5.js which is JavaScript library for creative coding as well but for web .
 I wanted to make a react PWA(progressive web app) so i used react-p5 wich is a npm package for p5 to use it within your React app to create this website , which serves as
 <li> a online exhibtion to the offline one that was held @ cairo .</li>
@@ -13,7 +17,11 @@ The whole theme is inspired by win98 and this was me trying to simulate and crea
  
  ## how to use it :
  <li>click on "cocoon.exe" and check the online exhibtion to see some generative art works by 5 amazing artists (including me) with thier instagram accounts linked .</li>
+ <img width="219" alt="algo2" src="https://user-images.githubusercontent.com/26660809/165190690-e0b9bdd7-0698-442a-8614-f71fd8c1686f.png">
+
 <li>click on "play with me " it will take you to a new canvas with moving/interactive generative art created in your browser thanks to p5 and react-p5 (touch your screen to change pattern).</li>
+<img width="960" alt="algo3" src="https://user-images.githubusercontent.com/26660809/165190703-8c0b4b48-721c-4b39-83a8-1f44f328d02d.png">
+
 
 
 ## Technologies 
@@ -33,8 +41,6 @@ rub npm install to install all needed dependencies
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 
 
